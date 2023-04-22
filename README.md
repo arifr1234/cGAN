@@ -3,7 +3,7 @@
 ## 2500 generated handwritten digits
 ![2500 generated handwritten digits](./docs/generated_images.png)
 
-## Plot
+## Training
 ![Training history](./docs/training_history.png)
 
 ## Load trained model
