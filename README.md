@@ -13,7 +13,7 @@ For this project, I developed conditional GAN from scratch, with the specific go
 ## Load pretrained model in HDF5 format
 
 ```python
-gan = load_model('cgan.h5')
+generator = load_model('cgan.h5')
 ```
 
 ## Load pretrained model's weights
