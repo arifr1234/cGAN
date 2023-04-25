@@ -40,6 +40,6 @@ gan.load_weights('./checkpoints/my_checkpoint')
 
 ## Demo
 
-You can use the the demo on [Hugging Face](https://huggingface.co/spaces/matusstas/cGAN)
+You can use the demo on [Hugging Face](https://huggingface.co/spaces/matusstas/cGAN)
 
 ![Training history](./docs/gradio.png)
