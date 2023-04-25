@@ -1,4 +1,4 @@
-# Conditional GAN trained on MNIST dataset
+# Conditional GAN Trained on MNIST Dataset
 
 [Paper](https://arxiv.org/pdf/1411.1784.pdf)
 
