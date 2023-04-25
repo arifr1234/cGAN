@@ -10,20 +10,30 @@ For this project, I developed conditional GAN from scratch, with the specific go
 ## Training
 ![Training history](./docs/training_history.png)
 
-## Load trained model
+## Load pretrained model in HDF5 format
 
 ```python
-g_opt = Adam(learning_rate=0.0001, beta_1=0.5)
-d_opt = Adam(learning_rate=0.00001, beta_1=0.5)
+gan = load_model('cgan.h5')
+```
 
-g_loss = BinaryCrossentropy()
-d_loss = BinaryCrossentropy()
+## Load pretrained model's weights
 
+In order to load weights, model has to be compiled
+
+```python
+# Initialize optimizers
+opt_g = Adam(learning_rate=0.0001, beta_1=0.5)
+opt_d = Adam(learning_rate=0.00001, beta_1=0.5)
+
+# Initialize losses
+loss_g = BinaryCrossentropy()
+loss_d = BinaryCrossentropy()
+
+# Initialize models
 generator = build_generator()
 discriminator = build_discriminator()
-
 gan = GAN(generator, discriminator)
-gan.compile(g_opt, d_opt, g_loss, d_loss)
+gan.compile(opt_g, opt_d, loss_g, loss_d)
 
 gan.load_weights('./checkpoints/my_checkpoint')
 ```
