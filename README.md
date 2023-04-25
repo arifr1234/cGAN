@@ -1,4 +1,4 @@
-# Conditional GAN trained on MNIST dataset
+# Conditional GAN Trained on MNIST Dataset
 
 [Paper](https://arxiv.org/pdf/1411.1784.pdf)
 
@@ -37,3 +37,9 @@ gan.compile(opt_g, opt_d, loss_g, loss_d)
 
 gan.load_weights('./checkpoints/my_checkpoint')
 ```
+
+## Demo
+
+You can use the try the demo on [Hugging Face Spaces](https://huggingface.co/spaces/matusstas/cGAN)
+
+![Training history](./docs/gradio.png)
