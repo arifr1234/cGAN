@@ -1,24 +1,16 @@
-# Conditional GAN Trained on MNIST Dataset
+# Conditional GAN
 
-[Paper](https://arxiv.org/pdf/1411.1784.pdf)
+Tensorflow implementation of Conditional GAN with the specific goal of generating realistic images of handwritten digits. MNIST dataset of 60k samples was used (10k for each class) to ensure optimal training performance. Model was trained for a total of 2000 epochs, which took approximately 3 hours on an NVIDIA A100 40GB GPU. Demo is also available at [Hugging Face](https://huggingface.co/spaces/matusstas/cGAN). 
 
-For this project, I developed conditional GAN from scratch, with the specific goal of generating realistic images of handwritten digits. In order to ensure optimal training performance, a MNIST dataset of 60k samples was used (10k for each class). Model was trained for a total of 2000 epochs, which took approximately 3 hours on an NVIDIA A100 40GB GPU.
-
-## 2500 generated handwritten digits
-![2500 generated handwritten digits](./docs/generated_images.png)
-
-## Training
-![Training history](./docs/training_history.png)
+![2500 generated handwritten digits](./docs/images_generated.png)
 
 ## Load pretrained model in HDF5 format
 
 ```python
-generator = load_model('cgan.h5')
+generator = load_model("cgan.h5")
 ```
 
-## Load pretrained model's weights
-
-In order to load weights, model has to be compiled
+## Load weights
 
 ```python
 # Initialize optimizers
@@ -35,11 +27,5 @@ discriminator = build_discriminator()
 gan = GAN(generator, discriminator)
 gan.compile(opt_g, opt_d, loss_g, loss_d)
 
-gan.load_weights('./checkpoints/my_checkpoint')
+gan.load_weights("./checkpoints/my_checkpoint")
 ```
-
-## Demo
-
-You can use the demo on [Hugging Face](https://huggingface.co/spaces/matusstas/cGAN)
-
-![Training history](./docs/gradio.png)
