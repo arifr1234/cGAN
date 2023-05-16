@@ -37,3 +37,9 @@ gan.compile(opt_g, opt_d, loss_g, loss_d)
 
 gan.load_weights("./checkpoints/my_checkpoint")
 ```
+
+## Weights & Biases
+
+![Training history](./docs/training_history.png)
+
+![cGAN evolution](./docs/cgan_evolution.png)
