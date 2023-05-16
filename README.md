@@ -8,7 +8,7 @@
 ![license](https://img.shields.io/github/license/matusstas/cgan)
 ![last commit](https://img.shields.io/github/last-commit/matusstas/cgan)
 
-Tensorflow implementation of Conditional GAN with the specific goal of generating realistic images of handwritten digits. To ensure optimal training performance, the MNIST dataset, which consists of 60,000 samples (10,000 for each class), was used. Model was trained for a total of 2000 epochs, which took approximately 3 hours on an NVIDIA A100 40GB GPU. Demo is available on [Hugging Face](https://huggingface.co/spaces/matusstas/cGAN). Training is available no [Weights & Biases](https://wandb.ai/matusstas/GAN?workspace=user-matusstas)
+Tensorflow implementation of Conditional GAN with the specific goal of generating realistic images of handwritten digits. To ensure optimal training performance, the MNIST dataset, which consists of 60,000 samples (10,000 for each class), was used. Model was trained for a total of 2000 epochs, which took approximately 3 hours on an NVIDIA A100 40GB GPU. Demo is available on [Hugging Face](https://huggingface.co/spaces/matusstas/cGAN). Training is available on [Weights & Biases](https://wandb.ai/matusstas/GAN?workspace=user-matusstas).
 
 ![2500 generated handwritten digits](./docs/images_generated.png)
 
