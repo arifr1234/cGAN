@@ -1,8 +1,14 @@
 # Conditional GAN
 
-![github clones](https://img.shields.io/badge/clones-50%2B-blueviolet)
+**IF YOU FIND THIS REPOSITORY HELPFUL, PLEASE CONSIDER STARRING IT.**
 
-Tensorflow implementation of Conditional GAN with the specific goal of generating realistic images of handwritten digits. MNIST dataset of 60k samples was used (10k for each class) to ensure optimal training performance. Model was trained for a total of 2000 epochs, which took approximately 3 hours on an NVIDIA A100 40GB GPU. Demo is available on [Hugging Face](https://huggingface.co/spaces/matusstas/cGAN). 
+![github clones](https://img.shields.io/badge/clones-50%2B-blueviolet)
+![demo](https://img.shields.io/badge/demo-available-orange)
+![contributors](https://img.shields.io/github/contributors/matusstas/cgan)
+![license](https://img.shields.io/github/license/matusstas/cgan)
+![last commit](https://img.shields.io/github/last-commit/matusstas/cgan)
+
+Tensorflow implementation of Conditional GAN with the specific goal of generating realistic images of handwritten digits. To ensure optimal training performance, the MNIST dataset, which consists of 60,000 samples (10,000 for each class), was used. Model was trained for a total of 2000 epochs, which took approximately 3 hours on an NVIDIA A100 40GB GPU. Demo is available on [Hugging Face](https://huggingface.co/spaces/matusstas/cGAN). Training is available no [Weights & Biases](https://wandb.ai/matusstas/GAN?workspace=user-matusstas)
 
 ![2500 generated handwritten digits](./docs/images_generated.png)
 
@@ -12,7 +18,7 @@ Tensorflow implementation of Conditional GAN with the specific goal of generatin
 generator = load_model("cgan.h5")
 ```
 
-## Load weights
+## Load model's weights
 
 ```python
 # Initialize optimizers
